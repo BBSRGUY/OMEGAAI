@@ -1,0 +1,68 @@
+{
+    "hybrid_retrieval": {
+      "enabled": true,
+      "semantic_vector_retrieval": {
+        "enabled": true,
+        "embedding_model": "BERT",
+        "similarity_metric": "cosine",
+        "max_results": 10
+      },
+      "structured_retrieval": {
+        "enabled": true,
+        "knowledge_graph": {
+          "enabled": true,
+          "source": "domain_specific_kg",
+          "query_language": "SPARQL"
+        },
+        "database_retrieval": {
+          "enabled": true,
+          "database_type": "SQL",
+          "max_results": 5
+        }
+      },
+      "retrieval_fusion": {
+        "fusion_strategy": "contextual_weighting",
+        "confidence_threshold": 0.8
+      }
+    },
+    "retrieval_pipelines": {
+      "default_pipeline": {
+        "semantic_retrieval_first": true,
+        "fallback_to_structured": true,
+        "context_enrichment": {
+          "enabled": true,
+          "depth": 2
+        }
+      },
+      "specialized_pipelines": [
+        {
+          "name": "medical_knowledge_pipeline",
+          "semantic_vector_retrieval": {
+            "enabled": true,
+            "embedding_model": "BioBERT",
+            "max_results": 15
+          },
+          "structured_retrieval": {
+            "enabled": true,
+            "knowledge_graph": {
+              "enabled": true,
+              "source": "medical_kg",
+              "query_language": "SPARQL"
+            }
+          }
+        }
+      ]
+    },
+    "optimization": {
+      "dynamic_retrieval_selection": {
+        "enabled": true,
+        "real_time_analysis": true,
+        "adjustment_criteria": "response_time"
+      },
+      "feedback_integration": {
+        "enabled": true,
+        "source": "SRLM",
+        "adjustment_threshold": 0.85
+      }
+    }
+  }
