@@ -1,0 +1,31 @@
+# Python Requirements for OmegaAI Project
+
+# Core Packages
+numpy==1.21.2
+pandas==1.3.3
+scikit-learn==0.24.2
+matplotlib==3.4.3
+
+# PyTorch for Model Training and Inference
+torch==1.9.0+cu111
+torchvision==0.10.0+cu111
+
+torchtext==0.10.0
+
+# Distributed Training
+horovod==0.23.0
+
+# Flask for API
+Flask==2.0.1
+
+# SPARQL Wrapper for Knowledge Graph Retrieval
+SPARQLWrapper==1.8.5
+
+# Weaviate for Vector-Based Retrieval
+weaviate-client==2.3.0
+
+# Requests for Health Monitoring
+requests==2.26.0
+
+# Logging
+logging==0.4.9.6
