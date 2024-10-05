@@ -1,4 +1,9 @@
-# OmegaAI: Comprehensive Guide
+# OmegaAI
+
+## Logo
+![My Logo](images/OmegaAI-logo.jpeg)
+
+## Comprehensive Guide
 
 ## Overview
 OmegaAI is an advanced AI system designed with a modular architecture incorporating state-of-the-art features, including hybrid retrieval, distributed training, self-reflective learning, and efficient memory management. The system aims to provide robust, contextually rich, and factually consistent responses using cutting-edge machine learning techniques. This guide provides an in-depth overview of the OmegaAI architecture, components, training, deployment, and more.
