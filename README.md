@@ -1,7 +1,4 @@
-# OmegaAI
-
-## Logo
-![My Logo](images/OmegaAI-logo.jpeg)
+# OmegaAI ![OMEGA AI](images/OmegaAI-logo.jpeg)
 
 ## Comprehensive Guide
 
