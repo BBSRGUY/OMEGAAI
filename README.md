@@ -1,4 +1,4 @@
-# OmegaAI !(images/OmegaAI-logo.jpeg)
+# OmegaAI ![](./images/OmegaAI-logo.jpeg)
 
 ## Comprehensive Guide
 
